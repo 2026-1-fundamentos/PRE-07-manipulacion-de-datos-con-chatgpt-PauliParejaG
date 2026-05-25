@@ -1,5 +1,30 @@
-# Created by venv; see https://docs.python.org/3/library/venv.html
-*
-# Excepciones para permitir subir los archivos de la tarea
+# =========================
+# Ignorar Entorno Virtual de Python (¡Los 486 archivos!)
+# =========================
+.venv/
+Include/
+Lib/
+Scripts/
+pyvenv.cfg
+
+# =========================
+# Ignorar Cachés
+# =========================
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+
+# =========================
+# Archivos de Datos
+# =========================
+*.csv
+*.png
+
+# =========================
+# EXCEPCIONES (Obligar a Git a leer estos archivos)
+# =========================
+!homework/homework.py
+!homework.py
 !files/output/summary.csv
 !files/plots/top10_drivers.png
